@@ -1,5 +1,5 @@
-# y
-
+# page-pagination
+# 一个 分页插件， 需用到element-ui。 同时调用数据需要依赖另外一个组件
 > vue and element-ui for pagination
 
 ## Build Setup
