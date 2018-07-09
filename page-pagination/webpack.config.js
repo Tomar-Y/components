@@ -65,7 +65,7 @@ module.exports = {
       commonjs2: 'vue',
       amd: 'vue'
     }
-  },
+  }
 }
 
 if (process.env.NODE_ENV === 'production') {
