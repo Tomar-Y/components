@@ -229,6 +229,9 @@ export default {
     }
   },
   components: { sidebarItem, ScrollBar },
+  created () {
+    this.initData()
+  },
   mounted () {
     
   },
@@ -239,6 +242,9 @@ export default {
     }
   },
   created () {
+    initData () {
+      // 这里应该去获取数据 (正常情况菜单数据 存放在全局状态管理工具里面)
+    }
   }
 }
 </script>
