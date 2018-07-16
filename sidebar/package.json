@@ -1,10 +1,15 @@
 {
-  "name": "sidebar",
-  "description": "a Vue component what sidebar-menus",
+  "name": "aside-xm",
+  "description": "vue aside web",
   "version": "1.0.0",
-  "author": "Tomar-Y <yh_stay@sina.com>",
+  "author": "Tomar-Y",
   "license": "MIT",
-  "private": true,
+  "private": false,
+  "keywords": [
+    "vue",
+    "aside"
+  ],
+  "main": "dist/aside.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
@@ -17,6 +22,10 @@
     "last 2 versions",
     "not ie <= 8"
   ],
+  "files": [
+    "dist",
+    "src"
+  ],
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -25,8 +34,7 @@
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6",
+    "vue-bulma-expanding": "^0.0.1",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
