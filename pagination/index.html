@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>pagination</title>
+    <!-- <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_738758_l9h5bv742mp.css"> -->
+  </head>
+  <body>
+    <div id="app">
+      <pagination :page="page" :pagerCount="pagerCount"></pagination>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="./dist/pagination.js"></script>
+    <script>
+      var vm = new Vue({
+        el: '#app',
+        data () {
+          return {
+            pagerCount: 9,
+            page: {
+              total: 290
+            },
+            aa: 'abc'
+          }
+        }
+      })
+    </script>
+    
+  </body>
+</html>
