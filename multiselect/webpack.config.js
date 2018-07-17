@@ -1,12 +1,11 @@
 var path = require('path')
 var webpack = require('webpack')
-
+var isPro = process.env.NODE_ENV === 'production'
 module.exports = {
-  // entry: './src/main.js',
-  entry: './src/lib/index.js',
+  entry: isPro ? './src/lib/index.js' : './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: './dist/',
+    publicPath: isPro ? './dist/' : '/dist/',
     filename: 'multiselect.js',
     library: 'multiselect',
     libraryTarget: 'umd',
