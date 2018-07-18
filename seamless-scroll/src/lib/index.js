@@ -7,7 +7,7 @@ const SeamlessScroll = {
     if (typeof window !== 'undefined' && window.Vue) {
       Vue = window.Vue
     }
-    Vue.use(seamlessScroll)
+    Vue.component('seamlessScroll', seamlessScroll)
   }
 }
 export default SeamlessScroll

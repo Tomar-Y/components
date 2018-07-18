@@ -19,7 +19,7 @@
   const arrayEqual = require('comutils/arrayEqual')
   const copyObj = require('comutils/copyObj')
   export default {
-    name: 'vue-seamless-scroll',
+    name: 'v-seamless-scroll',
     data () {
       return {
         xPos: 0,
