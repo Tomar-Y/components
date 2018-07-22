@@ -33,8 +33,8 @@ export default {
       this.qrcode = this.$QRCode('#qrcodeArea', {
         width : 150,
         height : 150,
-        colorDark: '#123',
-        colorLight: '#fff'
+        colorDark: '#444',
+        colorLight: '#F5F5F5'
       });
       this.makeCode()
     },
