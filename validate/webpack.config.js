@@ -19,11 +19,14 @@ module.exports = {
           'vue-style-loader',
           'css-loader'
         ],
-      },      {
+      },      
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
           loaders: {
+            scss: 'style-loader!css-loader!sass-loader',
+            sass: 'style-loader!css-loader!sass-loader?indentedSyntax',
           }
           // other vue-loader options go here
         }
@@ -38,6 +41,14 @@ module.exports = {
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]'
+        }
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: 'fonts/[name].[hash:7].[ext]'
         }
       }
     ]

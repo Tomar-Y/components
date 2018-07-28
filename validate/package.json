@@ -15,6 +15,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
+    "vee-validate": "^2.1.0-beta.6",
     "vue": "^2.5.11"
   },
   "browserslist": [
@@ -32,10 +33,16 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-3": "^6.24.1",
     "cross-env": "^5.0.5",
-    "css-loader": "^0.28.7",
-    "element-ui": "^2.4.3",
+    "css-loader": "^0.28.11",
+    "element-ui": "^2.4.5",
     "file-loader": "^1.1.4",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "scss-loader": "^0.0.1",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
     "vue-loader": "^13.0.5",
+    "vue-style-loader": "^4.1.1",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
